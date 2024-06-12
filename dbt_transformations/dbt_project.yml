@@ -1,0 +1,16 @@
+name: 'weather_project'
+version: '1.0'
+config-version: 2
+
+profile: 'weather_project'
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target"]
+
+models:
+  weather_project:
+    final_weather_aggregates:
+      +materialized: table
+      +database: '${synapse_database}'
+      +schema: '${synapse_schema}'

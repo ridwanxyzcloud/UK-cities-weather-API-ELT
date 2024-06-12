@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: staging_weather
+    description: "Staging model for weather data"
+    columns:
+      - name: Location
+        description: "The location of the weather report"
+      - name: Weather
+        description: "The main weather condition"
+      - name: Description
+        description: "A detailed description of the weather condition"
+      - name: Temperature
+        description: "The temperature in Celsius"
+      - name: Pressure
+        description: "The atmospheric pressure"
+      - name: Humidity
+        description: "The humidity level"
+      - name: Wind Speed
+        description: "The speed of the wind"
+      - name: reading_time
+        description: "The timestamp of the weather reading"
+
+  - name: final_weather_aggregates
+    description: "Final weather data aggregates"
+    columns:
+      - name: Location
+        description: "The location of the weather report"
+      - name: day
+        description: "The day of the weather report"
+      - name: avg_temp
+        description: "The average temperature of the day"
+      - name: avg_pressure
+        description: "The average atmospheric pressure of the day"
+      - name: avg_humidity
+        description: "The average humidity level of the day"
+      - name: avg_wind_speed
+        description: "The average wind speed of the day"

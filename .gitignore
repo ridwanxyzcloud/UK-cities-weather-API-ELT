@@ -1,1 +1,5 @@
 .env
+test.ipynb
+project.py
+dbtenv/
+0.weather_extract_load/.env

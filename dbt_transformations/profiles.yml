@@ -1,0 +1,22 @@
+weather_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: ${account_identifier}
+      user: ${sn_user}
+      password: ${sn_password}
+      role: ${sn_role}
+      database: ${sn_database}
+      warehouse: ${sn_warehouse}
+      schema: ${sn_schema}
+      threads: 1
+      client_session_keep_alive: False
+    synapse:
+      type: sqlserver
+      server: ${synapse_server}
+      user: ${synapse_user}
+      password: ${synapse_password}
+      database: ${synapse_database}
+      schema: ${synapse_schema}
+      port: 1433
